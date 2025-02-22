@@ -12,15 +12,10 @@
 </p>
 <br/>
 
-# Vite Plugin React
+# Vite + React
 
-See [`@vitejs/plugin-react` documentation](packages/plugin-react/README.md)
-
-## Packages
-
-| Package                                       | Version (click for changelogs)                                                                                                 |
-| --------------------------------------------- | :----------------------------------------------------------------------------------------------------------------------------- |
-| [@vitejs/plugin-react](packages/plugin-react) | [![plugin-react version](https://img.shields.io/npm/v/@vitejs/plugin-react.svg?label=%20)](packages/plugin-react/CHANGELOG.md) |
+How to Install
+npm install
 
 ## License
 
