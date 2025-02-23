@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import icon from "../assets/icon.png";
 import { FaCaretDown } from "react-icons/fa6";
 import { Link } from "@tanstack/react-router";
+import { FaBars } from "react-icons/fa6";
+import { FaXmark } from "react-icons/fa6";
 
 type DropdownProps = {
   title: string;
@@ -41,16 +43,18 @@ const Navbar: React.FC = () => {
   return (
     <nav className="fixed top-0 left-0 w-full p-4 md:p-20 md:py-10 z-50">
       <div className="flex justify-between items-center max-w-full mx-auto">
-        <div className="flex items-center">
-          <Link to="/" >
-            <img src={icon} alt="icon" className="h-10 w-10 mr-2 float-left"/>
-            <h1 className="text-xl font-bold text-[#435151] w-100">ReLeaf Fashion</h1>
-          </Link>
-        </div>
+        <Link to="/">
+          <div className="flex items-center">
+            <img src={icon} alt="icon" className="h-10 w-10 mr-2 float-left" />
+            <h1 className="text-xl font-bold text-[#435151] w-100 mb-1">
+              ReLeaf Fashion
+            </h1>
+          </div>
+        </Link>
 
         <div className="md:hidden">
           <button onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}>
-            {isMobileMenuOpen ? "✖" : "☰"}
+            {isMobileMenuOpen ? <FaXmark /> : <FaBars />}
           </button>
         </div>
 
@@ -81,9 +85,7 @@ const Navbar: React.FC = () => {
               "Upload Preloved Fashion",
             ]}
           />
-          <button className="text-gray-700 hover:text-green-600 block">
-            Learn & Act
-          </button>
+          <Dropdown title="Learn & Act" items={["Learn", "Donation"]} />
           <Dropdown
             title="Community"
             items={["About Us", "Forum Discussions", "Terms & Conditions"]}
