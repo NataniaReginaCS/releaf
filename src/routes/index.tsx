@@ -35,10 +35,10 @@ function HomeComponent() {
             >
               Marketplace
             </button>
-            <button className="bg-[#FFD8BE] text-[#333333] px-4 py-2 mb-4 rounded-full w-2/3 md:w-48">
+            <button className="bg-[#FFD8BE] text-[#333333] px-4 py-2 mb-4 rounded-full w-2/3 md:w-48 hover:bg-green-100 cursor-pointer" onClick={() => (window.location.href = "/learnAndAct")}>
               Learn & Act
             </button>
-            <button className="bg-[#FFD8BE] text-[#333333] px-4 py-2 mb-4 rounded-full w-2/3 md:w-48">
+            <button className="bg-[#FFD8BE] text-[#333333] px-4 py-2 mb-4 rounded-full w-2/3 md:w-48 hover:bg-green-100 cursor-pointer" onClick={() => (window.location.href = "/community")}>
               Community
             </button>
           </div>
