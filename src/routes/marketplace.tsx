@@ -80,7 +80,7 @@ function MarketplaceComponent() {
 						owners, and contribute to a more sustainable future.
 					</p>
 					<button className="bg-[#FFD8BE] text-[#333333] px-4 py-2 mt-10 mb-4 rounded-lg w-48 cursor-pointer" 
-					onClick={() => (window.location.href = "/marketplaceJual")}>
+					onClick={() => (window.location.href = "/jual")}>
 						Start Upload
 					</button>
 				</div>
