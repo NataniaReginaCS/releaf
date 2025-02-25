@@ -11,19 +11,13 @@
 // Import Routes
 
 import { Route as rootRoute } from './routes/__root'
-import { Route as MarketplaceJualImport } from './routes/marketplaceJual'
 import { Route as MarketplaceImport } from './routes/marketplace'
 import { Route as LearnAndActImport } from './routes/learnAndAct'
+import { Route as JualImport } from './routes/jual'
 import { Route as CommunityImport } from './routes/community'
 import { Route as IndexImport } from './routes/index'
 
 // Create/Update Routes
-
-const MarketplaceJualRoute = MarketplaceJualImport.update({
-  id: '/marketplaceJual',
-  path: '/marketplaceJual',
-  getParentRoute: () => rootRoute,
-} as any)
 
 const MarketplaceRoute = MarketplaceImport.update({
   id: '/marketplace',
@@ -34,6 +28,12 @@ const MarketplaceRoute = MarketplaceImport.update({
 const LearnAndActRoute = LearnAndActImport.update({
   id: '/learnAndAct',
   path: '/learnAndAct',
+  getParentRoute: () => rootRoute,
+} as any)
+
+const JualRoute = JualImport.update({
+  id: '/jual',
+  path: '/jual',
   getParentRoute: () => rootRoute,
 } as any)
 
@@ -67,6 +67,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof CommunityImport
       parentRoute: typeof rootRoute
     }
+    '/jual': {
+      id: '/jual'
+      path: '/jual'
+      fullPath: '/jual'
+      preLoaderRoute: typeof JualImport
+      parentRoute: typeof rootRoute
+    }
     '/learnAndAct': {
       id: '/learnAndAct'
       path: '/learnAndAct'
@@ -81,13 +88,6 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof MarketplaceImport
       parentRoute: typeof rootRoute
     }
-    '/marketplaceJual': {
-      id: '/marketplaceJual'
-      path: '/marketplaceJual'
-      fullPath: '/marketplaceJual'
-      preLoaderRoute: typeof MarketplaceJualImport
-      parentRoute: typeof rootRoute
-    }
   }
 }
 
@@ -96,62 +96,57 @@ declare module '@tanstack/react-router' {
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/community': typeof CommunityRoute
+  '/jual': typeof JualRoute
   '/learnAndAct': typeof LearnAndActRoute
   '/marketplace': typeof MarketplaceRoute
-  '/marketplaceJual': typeof MarketplaceJualRoute
 }
 
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/community': typeof CommunityRoute
+  '/jual': typeof JualRoute
   '/learnAndAct': typeof LearnAndActRoute
   '/marketplace': typeof MarketplaceRoute
-  '/marketplaceJual': typeof MarketplaceJualRoute
 }
 
 export interface FileRoutesById {
   __root__: typeof rootRoute
   '/': typeof IndexRoute
   '/community': typeof CommunityRoute
+  '/jual': typeof JualRoute
   '/learnAndAct': typeof LearnAndActRoute
   '/marketplace': typeof MarketplaceRoute
-  '/marketplaceJual': typeof MarketplaceJualRoute
 }
 
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths:
-    | '/'
-    | '/community'
-    | '/learnAndAct'
-    | '/marketplace'
-    | '/marketplaceJual'
+  fullPaths: '/' | '/community' | '/jual' | '/learnAndAct' | '/marketplace'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/community' | '/learnAndAct' | '/marketplace' | '/marketplaceJual'
+  to: '/' | '/community' | '/jual' | '/learnAndAct' | '/marketplace'
   id:
     | '__root__'
     | '/'
     | '/community'
+    | '/jual'
     | '/learnAndAct'
     | '/marketplace'
-    | '/marketplaceJual'
   fileRoutesById: FileRoutesById
 }
 
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   CommunityRoute: typeof CommunityRoute
+  JualRoute: typeof JualRoute
   LearnAndActRoute: typeof LearnAndActRoute
   MarketplaceRoute: typeof MarketplaceRoute
-  MarketplaceJualRoute: typeof MarketplaceJualRoute
 }
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   CommunityRoute: CommunityRoute,
+  JualRoute: JualRoute,
   LearnAndActRoute: LearnAndActRoute,
   MarketplaceRoute: MarketplaceRoute,
-  MarketplaceJualRoute: MarketplaceJualRoute,
 }
 
 export const routeTree = rootRoute
@@ -166,9 +161,9 @@ export const routeTree = rootRoute
       "children": [
         "/",
         "/community",
+        "/jual",
         "/learnAndAct",
-        "/marketplace",
-        "/marketplaceJual"
+        "/marketplace"
       ]
     },
     "/": {
@@ -177,14 +172,14 @@ export const routeTree = rootRoute
     "/community": {
       "filePath": "community.tsx"
     },
+    "/jual": {
+      "filePath": "jual.tsx"
+    },
     "/learnAndAct": {
       "filePath": "learnAndAct.tsx"
     },
     "/marketplace": {
       "filePath": "marketplace.tsx"
-    },
-    "/marketplaceJual": {
-      "filePath": "marketplaceJual.tsx"
     }
   }
 }
