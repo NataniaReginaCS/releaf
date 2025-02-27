@@ -13,6 +13,7 @@
 import { Route as rootRoute } from './routes/__root'
 import { Route as ViewImport } from './routes/view'
 import { Route as TermImport } from './routes/term'
+import { Route as ProductImport } from './routes/product'
 import { Route as MarketplaceImport } from './routes/marketplace'
 import { Route as LearnAndActImport } from './routes/learnAndAct'
 import { Route as JualImport } from './routes/jual'
@@ -31,6 +32,12 @@ const ViewRoute = ViewImport.update({
 const TermRoute = TermImport.update({
   id: '/term',
   path: '/term',
+  getParentRoute: () => rootRoute,
+} as any)
+
+const ProductRoute = ProductImport.update({
+  id: '/product',
+  path: '/product',
   getParentRoute: () => rootRoute,
 } as any)
 
@@ -116,6 +123,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof MarketplaceImport
       parentRoute: typeof rootRoute
     }
+    '/product': {
+      id: '/product'
+      path: '/product'
+      fullPath: '/product'
+      preLoaderRoute: typeof ProductImport
+      parentRoute: typeof rootRoute
+    }
     '/term': {
       id: '/term'
       path: '/term'
@@ -142,6 +156,7 @@ export interface FileRoutesByFullPath {
   '/jual': typeof JualRoute
   '/learnAndAct': typeof LearnAndActRoute
   '/marketplace': typeof MarketplaceRoute
+  '/product': typeof ProductRoute
   '/term': typeof TermRoute
   '/view': typeof ViewRoute
 }
@@ -153,6 +168,7 @@ export interface FileRoutesByTo {
   '/jual': typeof JualRoute
   '/learnAndAct': typeof LearnAndActRoute
   '/marketplace': typeof MarketplaceRoute
+  '/product': typeof ProductRoute
   '/term': typeof TermRoute
   '/view': typeof ViewRoute
 }
@@ -165,6 +181,7 @@ export interface FileRoutesById {
   '/jual': typeof JualRoute
   '/learnAndAct': typeof LearnAndActRoute
   '/marketplace': typeof MarketplaceRoute
+  '/product': typeof ProductRoute
   '/term': typeof TermRoute
   '/view': typeof ViewRoute
 }
@@ -178,6 +195,7 @@ export interface FileRouteTypes {
     | '/jual'
     | '/learnAndAct'
     | '/marketplace'
+    | '/product'
     | '/term'
     | '/view'
   fileRoutesByTo: FileRoutesByTo
@@ -188,6 +206,7 @@ export interface FileRouteTypes {
     | '/jual'
     | '/learnAndAct'
     | '/marketplace'
+    | '/product'
     | '/term'
     | '/view'
   id:
@@ -198,6 +217,7 @@ export interface FileRouteTypes {
     | '/jual'
     | '/learnAndAct'
     | '/marketplace'
+    | '/product'
     | '/term'
     | '/view'
   fileRoutesById: FileRoutesById
@@ -210,6 +230,7 @@ export interface RootRouteChildren {
   JualRoute: typeof JualRoute
   LearnAndActRoute: typeof LearnAndActRoute
   MarketplaceRoute: typeof MarketplaceRoute
+  ProductRoute: typeof ProductRoute
   TermRoute: typeof TermRoute
   ViewRoute: typeof ViewRoute
 }
@@ -221,6 +242,7 @@ const rootRouteChildren: RootRouteChildren = {
   JualRoute: JualRoute,
   LearnAndActRoute: LearnAndActRoute,
   MarketplaceRoute: MarketplaceRoute,
+  ProductRoute: ProductRoute,
   TermRoute: TermRoute,
   ViewRoute: ViewRoute,
 }
@@ -241,6 +263,7 @@ export const routeTree = rootRoute
         "/jual",
         "/learnAndAct",
         "/marketplace",
+        "/product",
         "/term",
         "/view"
       ]
@@ -262,6 +285,9 @@ export const routeTree = rootRoute
     },
     "/marketplace": {
       "filePath": "marketplace.tsx"
+    },
+    "/product": {
+      "filePath": "product.tsx"
     },
     "/term": {
       "filePath": "term.tsx"
