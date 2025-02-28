@@ -11,8 +11,8 @@ export const Route = createFileRoute("/marketplace")({
 function MarketplaceComponent() {
 	return (
 		<>
-			<section className="h-full grid grid-cols-1 md:grid-cols-2 items-center bg-white md:px-20 mt-20 md:mt-0 gap-10">
-				<div className="w-full px-11 text-center md:text-left">
+			<section className="h-full grid grid-cols-1 md:grid-cols-2 items-center bg-white mt-20 md:mt-20">
+				<div className="w-full px-11 text-center md:text-left md:mx-20 ">
 					<h2 className="text-4xl md:text-6xl font-bold text-gray-800 mt-4">
 						Give your clothes
 					</h2>
@@ -32,7 +32,7 @@ function MarketplaceComponent() {
 							<p className="text-xl text-gray-600">Successful Transactions</p>
 						</div>
 						<div className="hidden md:block border-l border-gray-300 h-full"></div>
-						<div className="flex flex-col items-center md:items-start mt-4 md:mt-0">
+						<div className="flex flex-col items-center md:items-start md:mt-0">
 							<h2 className="text-3xl font-bold text-gray-800">250+</h2>
 							<p className="text-xl text-gray-600">
 								Preloved Items Given a New Life
@@ -40,19 +40,19 @@ function MarketplaceComponent() {
 						</div>
 					</div>
 				</div>
-				<div className="w-full flex justify-center">
+				<div className="max-sm:mt-15 w-full flex justify-center">
 					<img
 						src={marketplace}
 						alt="ReLeaf Marketplace"
-						className="w-full md:w-auto md:h-160 h-70 object-cover"
+						className="w-full md:w-auto md:h-140 h-70 object-cover"
 					/>
 				</div>
-				<div className="col-span-1 md:col-span-2 h-[50px] bg-gray-300 w-full italic text-black text-center pt-3">
+				<div className=" md:px-0 col-span-1 md:col-span-2 h-[50px] md:h-[70px] bg-gray-300 w-full italic text-black text-center pt-3 md:pt-5 md:text-xl">
 					Style meets sustainability—rewear, reshare, revive.
 				</div>
 			</section>
 
-			<section className="flex flex-col-reverse md:flex-row items-center justify-between bg-white px-10 md:px-20 align-center md:my-10 mt-60 ">
+			<section className="flex flex-col-reverse md:flex-row items-center justify-between bg-white px-10 md:px-20 align-center md:mt-10 mt-15 ">
 				<div className="w-full relative md:px-11 md:mb-0">
 					<h2 className="text-3xl md:text-5xl font-bold text-gray-800 md:mt-4">
 						Explore Preloved Fashion
@@ -73,7 +73,8 @@ function MarketplaceComponent() {
 					/>
 				</div>
 			</section>
-			<section className="flex flex-col-reverse md:flex-row items-center md:justify-between bg-white md:px-20 align-center md:my-10 md:mt-0 max-sm:mb-20">
+
+			<section className="flex flex-col-reverse md:flex-row items-center md:justify-between bg-white md:px-20 align-center max-sm:mb-20">
 				<div className="w-full relative md:px-11 md:mb-35 md:order-2 px-10">
 					<h2 className="max-sm:mt-10 text-3xl md:text-5xl font-bold text-gray-800 md:mt-4">
 						Upload Your Preloved Fashion
