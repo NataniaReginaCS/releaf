@@ -16,6 +16,7 @@ import { Route as TermImport } from './routes/term'
 import { Route as MarketplaceImport } from './routes/marketplace'
 import { Route as LearnAndActImport } from './routes/learnAndAct'
 import { Route as JualImport } from './routes/jual'
+import { Route as ForumImport } from './routes/forum'
 import { Route as DonationImport } from './routes/donation'
 import { Route as CommunityImport } from './routes/community'
 import { Route as IndexImport } from './routes/index'
@@ -49,6 +50,12 @@ const LearnAndActRoute = LearnAndActImport.update({
 const JualRoute = JualImport.update({
   id: '/jual',
   path: '/jual',
+  getParentRoute: () => rootRoute,
+} as any)
+
+const ForumRoute = ForumImport.update({
+  id: '/forum',
+  path: '/forum',
   getParentRoute: () => rootRoute,
 } as any)
 
@@ -95,6 +102,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof DonationImport
       parentRoute: typeof rootRoute
     }
+    '/forum': {
+      id: '/forum'
+      path: '/forum'
+      fullPath: '/forum'
+      preLoaderRoute: typeof ForumImport
+      parentRoute: typeof rootRoute
+    }
     '/jual': {
       id: '/jual'
       path: '/jual'
@@ -139,6 +153,7 @@ export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/community': typeof CommunityRoute
   '/donation': typeof DonationRoute
+  '/forum': typeof ForumRoute
   '/jual': typeof JualRoute
   '/learnAndAct': typeof LearnAndActRoute
   '/marketplace': typeof MarketplaceRoute
@@ -150,6 +165,7 @@ export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/community': typeof CommunityRoute
   '/donation': typeof DonationRoute
+  '/forum': typeof ForumRoute
   '/jual': typeof JualRoute
   '/learnAndAct': typeof LearnAndActRoute
   '/marketplace': typeof MarketplaceRoute
@@ -162,6 +178,7 @@ export interface FileRoutesById {
   '/': typeof IndexRoute
   '/community': typeof CommunityRoute
   '/donation': typeof DonationRoute
+  '/forum': typeof ForumRoute
   '/jual': typeof JualRoute
   '/learnAndAct': typeof LearnAndActRoute
   '/marketplace': typeof MarketplaceRoute
@@ -175,6 +192,7 @@ export interface FileRouteTypes {
     | '/'
     | '/community'
     | '/donation'
+    | '/forum'
     | '/jual'
     | '/learnAndAct'
     | '/marketplace'
@@ -185,6 +203,7 @@ export interface FileRouteTypes {
     | '/'
     | '/community'
     | '/donation'
+    | '/forum'
     | '/jual'
     | '/learnAndAct'
     | '/marketplace'
@@ -195,6 +214,7 @@ export interface FileRouteTypes {
     | '/'
     | '/community'
     | '/donation'
+    | '/forum'
     | '/jual'
     | '/learnAndAct'
     | '/marketplace'
@@ -207,6 +227,7 @@ export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   CommunityRoute: typeof CommunityRoute
   DonationRoute: typeof DonationRoute
+  ForumRoute: typeof ForumRoute
   JualRoute: typeof JualRoute
   LearnAndActRoute: typeof LearnAndActRoute
   MarketplaceRoute: typeof MarketplaceRoute
@@ -218,6 +239,7 @@ const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   CommunityRoute: CommunityRoute,
   DonationRoute: DonationRoute,
+  ForumRoute: ForumRoute,
   JualRoute: JualRoute,
   LearnAndActRoute: LearnAndActRoute,
   MarketplaceRoute: MarketplaceRoute,
@@ -238,6 +260,7 @@ export const routeTree = rootRoute
         "/",
         "/community",
         "/donation",
+        "/forum",
         "/jual",
         "/learnAndAct",
         "/marketplace",
@@ -253,6 +276,9 @@ export const routeTree = rootRoute
     },
     "/donation": {
       "filePath": "donation.tsx"
+    },
+    "/forum": {
+      "filePath": "forum.tsx"
     },
     "/jual": {
       "filePath": "jual.tsx"
