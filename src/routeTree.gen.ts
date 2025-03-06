@@ -17,6 +17,8 @@ import { Route as ProductImport } from './routes/product'
 import { Route as MarketplaceImport } from './routes/marketplace'
 import { Route as LearnAndActImport } from './routes/learnAndAct'
 import { Route as JualImport } from './routes/jual'
+import { Route as ForumdetailImport } from './routes/forum_detail'
+import { Route as ForumImport } from './routes/forum'
 import { Route as DonationImport } from './routes/donation'
 import { Route as CommunityImport } from './routes/community'
 import { Route as IndexImport } from './routes/index'
@@ -56,6 +58,18 @@ const LearnAndActRoute = LearnAndActImport.update({
 const JualRoute = JualImport.update({
   id: '/jual',
   path: '/jual',
+  getParentRoute: () => rootRoute,
+} as any)
+
+const ForumdetailRoute = ForumdetailImport.update({
+  id: '/forum_detail',
+  path: '/forum_detail',
+  getParentRoute: () => rootRoute,
+} as any)
+
+const ForumRoute = ForumImport.update({
+  id: '/forum',
+  path: '/forum',
   getParentRoute: () => rootRoute,
 } as any)
 
@@ -100,6 +114,20 @@ declare module '@tanstack/react-router' {
       path: '/donation'
       fullPath: '/donation'
       preLoaderRoute: typeof DonationImport
+      parentRoute: typeof rootRoute
+    }
+    '/forum': {
+      id: '/forum'
+      path: '/forum'
+      fullPath: '/forum'
+      preLoaderRoute: typeof ForumImport
+      parentRoute: typeof rootRoute
+    }
+    '/forum_detail': {
+      id: '/forum_detail'
+      path: '/forum_detail'
+      fullPath: '/forum_detail'
+      preLoaderRoute: typeof ForumdetailImport
       parentRoute: typeof rootRoute
     }
     '/jual': {
@@ -153,6 +181,8 @@ export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/community': typeof CommunityRoute
   '/donation': typeof DonationRoute
+  '/forum': typeof ForumRoute
+  '/forum_detail': typeof ForumdetailRoute
   '/jual': typeof JualRoute
   '/learnAndAct': typeof LearnAndActRoute
   '/marketplace': typeof MarketplaceRoute
@@ -165,6 +195,8 @@ export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/community': typeof CommunityRoute
   '/donation': typeof DonationRoute
+  '/forum': typeof ForumRoute
+  '/forum_detail': typeof ForumdetailRoute
   '/jual': typeof JualRoute
   '/learnAndAct': typeof LearnAndActRoute
   '/marketplace': typeof MarketplaceRoute
@@ -178,6 +210,8 @@ export interface FileRoutesById {
   '/': typeof IndexRoute
   '/community': typeof CommunityRoute
   '/donation': typeof DonationRoute
+  '/forum': typeof ForumRoute
+  '/forum_detail': typeof ForumdetailRoute
   '/jual': typeof JualRoute
   '/learnAndAct': typeof LearnAndActRoute
   '/marketplace': typeof MarketplaceRoute
@@ -192,6 +226,8 @@ export interface FileRouteTypes {
     | '/'
     | '/community'
     | '/donation'
+    | '/forum'
+    | '/forum_detail'
     | '/jual'
     | '/learnAndAct'
     | '/marketplace'
@@ -203,6 +239,8 @@ export interface FileRouteTypes {
     | '/'
     | '/community'
     | '/donation'
+    | '/forum'
+    | '/forum_detail'
     | '/jual'
     | '/learnAndAct'
     | '/marketplace'
@@ -214,6 +252,8 @@ export interface FileRouteTypes {
     | '/'
     | '/community'
     | '/donation'
+    | '/forum'
+    | '/forum_detail'
     | '/jual'
     | '/learnAndAct'
     | '/marketplace'
@@ -227,6 +267,8 @@ export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   CommunityRoute: typeof CommunityRoute
   DonationRoute: typeof DonationRoute
+  ForumRoute: typeof ForumRoute
+  ForumdetailRoute: typeof ForumdetailRoute
   JualRoute: typeof JualRoute
   LearnAndActRoute: typeof LearnAndActRoute
   MarketplaceRoute: typeof MarketplaceRoute
@@ -239,6 +281,8 @@ const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   CommunityRoute: CommunityRoute,
   DonationRoute: DonationRoute,
+  ForumRoute: ForumRoute,
+  ForumdetailRoute: ForumdetailRoute,
   JualRoute: JualRoute,
   LearnAndActRoute: LearnAndActRoute,
   MarketplaceRoute: MarketplaceRoute,
@@ -260,6 +304,8 @@ export const routeTree = rootRoute
         "/",
         "/community",
         "/donation",
+        "/forum",
+        "/forum_detail",
         "/jual",
         "/learnAndAct",
         "/marketplace",
@@ -276,6 +322,12 @@ export const routeTree = rootRoute
     },
     "/donation": {
       "filePath": "donation.tsx"
+    },
+    "/forum": {
+      "filePath": "forum.tsx"
+    },
+    "/forum_detail": {
+      "filePath": "forum_detail.tsx"
     },
     "/jual": {
       "filePath": "jual.tsx"
