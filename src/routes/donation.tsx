@@ -12,8 +12,61 @@ export const Route = createFileRoute("/donation")({
 
 function RouteComponent() {
 	return (
-		<div className="h-full text-black bg-white pb-15 pt-40 md:my-0 mt-0 text-black max-sm:pt-20">
-			<div className="flex flex-row items-start justify-center gap-30 flex-wrap w-full">
+		<div className="h-full text-black bg-white pb-15 md:my-0 mt-0  max-sm:pt-0">
+			<div className="mt-17 md:px-32 max-sm:mt-17 max-sm:px-7">
+				<ol className="inline-flex items-center space-x-1 md:space-x-3">
+					<li className="inline-flex items-center">
+						<a
+							href="/"
+							className="inline-flex items-center text-sm font-medium text-gray-500 hover:text-green-300"
+						>
+							Home
+						</a>
+					</li>
+					<li>
+						<div className="flex items-center">
+							<svg
+								className="w-6 h-6 text-gray-400"
+								fill="currentColor"
+								viewBox="0 0 20 20"
+								xmlns="http://www.w3.org/2000/svg"
+							>
+								<path
+									fill-rule="evenodd"
+									d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+									clip-rule="evenodd"
+								></path>
+							</svg>
+							<a
+								href="/learn"
+								className="ml-1 text-sm font-medium text-gray-500 hover:text-green-300 md:ml-2"
+							>
+								Learn & Act
+							</a>
+						</div>
+					</li>
+					<li>
+						<div className="flex items-center">
+							<svg
+								className="w-6 h-6 text-gray-400"
+								fill="currentColor"
+								viewBox="0 0 20 20"
+								xmlns="http://www.w3.org/2000/svg"
+							>
+								<path
+									fill-rule="evenodd"
+									d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+									clip-rule="evenodd"
+								></path>
+							</svg>
+							<span className="ml-1 text-sm font-medium text-gray-500 md:ml-2">
+								Donation
+							</span>
+						</div>
+					</li>
+				</ol>
+			</div>
+			<div className="flex flex-row items-start justify-center gap-30 flex-wrap w-full md:mt-10 max-sm:mt-10">
 				<div className="space-y-12 w-full lg:w-1/2 max-sm:space-y-10">
 					<h1 className="text-4xl font-bold text-center max-sm:text-3xl">
 						Make an Impact with Your <br /> Donation

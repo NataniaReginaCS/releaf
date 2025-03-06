@@ -1,15 +1,67 @@
 import { createFileRoute } from "@tanstack/react-router";
 
-export const Route = createFileRoute("/jual")({
+export const Route = createFileRoute("/upload")({
 	component: JualComponent,
 });
 
 function JualComponent() {
 	return (
 		<>
-			<div className="h-full bg-white px-20 pb-10 md:my-0 mt-0">
-				
-				<div className="w-full relative pl-1 pt-[150px]">
+			<div className="h-full bg-white px-20 pb-10 md:my-0 mt-0 md:ps-32 md:pe-32 max-sm:mt-17 max-sm:px-7">
+				<div className="mt-17 max-sm:mt-0">
+					<ol className="inline-flex items-center space-x-1 md:space-x-3">
+						<li className="inline-flex items-center">
+							<a
+								href="/"
+								className="inline-flex items-center text-sm font-medium text-gray-500 hover:text-green-300"
+							>
+								Home
+							</a>
+						</li>
+						<li>
+							<div className="flex items-center">
+								<svg
+									className="w-6 h-6 text-gray-400"
+									fill="currentColor"
+									viewBox="0 0 20 20"
+									xmlns="http://www.w3.org/2000/svg"
+								>
+									<path
+										fill-rule="evenodd"
+										d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+										clip-rule="evenodd"
+									></path>
+								</svg>
+								<a
+									href="/marketplace"
+									className="ml-1 text-sm font-medium text-gray-500 hover:text-green-300 md:ml-2"
+								>
+									Marketplace
+								</a>
+							</div>
+						</li>
+						<li>
+							<div className="flex items-center">
+								<svg
+									className="w-6 h-6 text-gray-400"
+									fill="currentColor"
+									viewBox="0 0 20 20"
+									xmlns="http://www.w3.org/2000/svg"
+								>
+									<path
+										fill-rule="evenodd"
+										d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+										clip-rule="evenodd"
+									></path>
+								</svg>
+								<span className="ml-1 text-sm font-medium text-gray-500 md:ml-2">
+									Upload
+								</span>
+							</div>
+						</li>
+					</ol>
+				</div>
+				<div className="w-full relative  mt-5 ">
 					<h1 className="text-black text-[30px]">
 						Lengkapi Detail Produk yang ingin dipasarkan
 					</h1>
@@ -342,21 +394,18 @@ function JualComponent() {
 									</fieldset>
 								</div>
 								<div className="col-span-1 flex justify-end items-end">
-									
-										<button
-											type="submit"
-											className="rounded-md bg-[#FFD8BE] w-3/6 max-sm:w-full max-sm:mt-5 px-3 py-2 text-sm  text-black shadow-xs hover:bg-green-100 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
-										>
-											Upload Produk
-										</button>
-									
+									<button
+										type="submit"
+										className="rounded-md bg-[#FFD8BE] w-3/6 max-sm:w-full max-sm:mt-5 px-3 py-2 text-sm  text-black shadow-xs hover:bg-green-100 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+									>
+										Upload Produk
+									</button>
 								</div>
 							</div>
 						</div>
 					</form>
 				</div>
 			</div>
-			
 		</>
 	);
 }

@@ -48,16 +48,16 @@ function Community() {
 					>
 						About Us
 					</button>
-					<button className="bg-[#FFD8BE] text-[#333333] px-6 py-2 rounded-full hover:bg-green-100">
+					<button className="bg-[#FFD8BE] text-[#333333] px-6 py-2 rounded-full hover:bg-green-100" onClick={() => (window.location.href = "/forum")}>
 						Forum Discussions
 					</button>
-					<button className="bg-[#FFD8BE] text-[#333333] px-6 py-2 rounded-full hover:bg-green-100">
+					<button className="bg-[#FFD8BE] text-[#333333] px-6 py-2 rounded-full hover:bg-green-100"onClick={() => (window.location.href = "/term")}>
 						Terms & Conditions
 					</button>
 				</div>
 			</section>
 
-			<section className="pt-10 md:pt-70 bg-white">
+			<section className="pt-10 md:pt-70 bg-white" id="startLearning">
 				<div className="grid grid-cols-1 md:grid-cols-2 md:ml-30 items-center text-center md:text-left">
 					<h1 className="text-[#142E38] text-3xl md:text-5xl font-bold mx-15 md:mx-0">
 						ReLeaf Community: Connect, Share, and Make an Impact

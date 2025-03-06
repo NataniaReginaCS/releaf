@@ -7,7 +7,7 @@ import maskot5 from "../assets/maskot5.png";
 import maskot6 from "../assets/maskot6.png";
 import list from "../assets/check.png";
 
-export const Route = createFileRoute("/learnAndAct")({
+export const Route = createFileRoute("/learn")({
 	component: LearnAndActComponent,
 });
 
@@ -37,7 +37,8 @@ function LearnAndActComponent() {
 					>
 						Start Learning
 					</button>
-					<button className="bg-[#FFD8BE] text-[#333333] px-6 py-2 rounded-full hover:bg-green-100">
+					<button className="bg-[#FFD8BE] text-[#333333] px-6 py-2 rounded-full hover:bg-green-100" onClick={() => (window.location.href = "/donation")}>
+						
 						Make a Donation
 					</button>
 				</div>

@@ -61,7 +61,7 @@ function MarketplaceComponent() {
 						Discover stylish, sustainable, and affordable preloved fashion. Give
 						every piece a second life while reducing fashion waste!
 					</p>
-					<button className="bg-[#FFD8BE] text-[#333333] px-4 py-2 mt-10 mb-4 rounded-lg w-48 hover:bg-green-100 cursor-pointer">
+					<button className="bg-[#FFD8BE] text-[#333333] px-4 py-2 mt-10 mb-4 rounded-lg w-48 hover:bg-green-100 cursor-pointer"onClick={() => (window.location.href = "/view")}>
 						Start Explore
 					</button>
 				</div>
@@ -85,7 +85,7 @@ function MarketplaceComponent() {
 					</p>
 					<button
 						className="bg-[#FFD8BE] text-[#333333] px-4 py-2 mt-10 mb-4 rounded-lg w-48 hover:bg-green-100 cursor-pointer"
-						onClick={() => (window.location.href = "/jual")}
+						onClick={() => (window.location.href = "/upload")}
 					>
 						Start Upload
 					</button>

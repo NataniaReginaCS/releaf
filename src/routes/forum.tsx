@@ -113,6 +113,7 @@ function ForumComponent() {
 					<button
 						type="submit"
 						className="md:mt-10 bg-[#FFD8BE] mt-5 place-self-start justify-center rounded-full font-boldflex w-1/4 px-3 py-2 text-black shadow-xs hover:bg-green-100 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 max-sm:w-full max-sm:place-self-center"
+						onClick={() => (window.location.href = "#more")}
 					>
 						Explore Discussions
 					</button>
@@ -212,7 +213,7 @@ function ForumComponent() {
 							value={search}
 							onChange={(e) => setSearch(e.target.value)}
 						/>
-						<div className="w-full md:w-full grid grid-cols-1 md:grid-cols-1 gap-6 mb-13">
+						<div className="w-full md:w-full grid grid-cols-1 md:grid-cols-1 gap-6 mb-13" id="more">
 							{diskusi
 								.filter((p) => p.topic.toLowerCase().includes(search.toLowerCase()))
 								.map((diskusi) => (
@@ -228,7 +229,7 @@ function ForumComponent() {
 										</div>
 										<p className="font-normal">{diskusi.message}</p>
 										<a
-											href="/"
+											href="/forum_detail"
 											className="flex self-end items-center pt-1 hover:text-[#4AD74F] text-[#FFD8BE]"
 										>
 											<span className="self-start ml-1 text-sm font-medium  md:ml-2">

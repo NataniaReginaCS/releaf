@@ -54,9 +54,12 @@ function RouteComponent() {
 									clip-rule="evenodd"
 								></path>
 							</svg>
-							<span className="ml-1 text-sm font-medium text-gray-500 md:ml-2 ">
+							<a
+								href="/forum"
+								className="ml-1 text-sm font-medium text-gray-500 hover:text-green-300 md:ml-2"
+							>
 								Forum
-							</span>
+							</a>
 						</div>
 					</li>
 					<li>
