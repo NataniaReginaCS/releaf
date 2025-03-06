@@ -5,7 +5,7 @@ import { Link } from "@tanstack/react-router";
 
 type DropdownProps = {
     title: string;
-    items: string[];
+    items: { label: string; path: string }[];
     isActive: boolean;
     onClick: () => void;
 };
@@ -31,7 +31,7 @@ const Dropdown: React.FC<DropdownProps> = ({
                             key={index}
                             className="px-4 py-2 hover:bg-gray-100 cursor-pointer"
                         >
-                            {item}
+                            <Link to={item.path}>{item.label}</Link>
                         </li>
                     ))}
                 </ul>
@@ -92,9 +92,18 @@ const Navbar: React.FC = () => {
                     <Dropdown
                         title="Marketplace"
                         items={[
-                            "Overview",
-                            "Shop Preloved Fashion",
-                            "Upload Preloved Fashion",
+                            {
+                                label: "Overview",
+                                path: "/marketplace",
+                            },
+                            {
+                                label: "Shop Preloved Fashion",
+                                path: "/view",
+                            },
+                            {
+                                label: "Upload Preloved Fashion",
+                                path: "/upload",
+                            },
                         ]}
                         isActive={activeDropdown === "Marketplace"}
                         onClick={() =>
@@ -107,7 +116,10 @@ const Navbar: React.FC = () => {
                     />
                     <Dropdown
                         title="Learn & Act"
-                        items={["Learn", "Donation"]}
+                        items={[
+                            { label: "Learn", path: "/learn" },
+                            { label: "Donation", path: "/donation" },
+                        ]}
                         isActive={activeDropdown === "Learn & Act"}
                         onClick={() =>
                             setActiveDropdown(
@@ -120,9 +132,9 @@ const Navbar: React.FC = () => {
                     <Dropdown
                         title="Community"
                         items={[
-                            "About Us",
-                            "Forum Discussions",
-                            "Terms & Conditions",
+                            { label: "About Us", path: "/about" },
+                            { label: "Forum Discussions", path: "/forum" },
+                            { label: "Terms & Conditions", path: "/term" },
                         ]}
                         isActive={activeDropdown === "Community"}
                         onClick={() =>
@@ -141,9 +153,18 @@ const Navbar: React.FC = () => {
                     <Dropdown
                         title="Marketplace"
                         items={[
-                            "Overview",
-                            "Shop Preloved Fashion",
-                            "Upload Preloved Fashion",
+                            {
+                                label: "Overview",
+                                path: "/marketplace",
+                            },
+                            {
+                                label: "Shop Preloved Fashion",
+                                path: "/view",
+                            },
+                            {
+                                label: "Upload Preloved Fashion",
+                                path: "/upload",
+                            },
                         ]}
                         isActive={activeDropdown === "Marketplace"}
                         onClick={() =>
@@ -156,7 +177,10 @@ const Navbar: React.FC = () => {
                     />
                     <Dropdown
                         title="Learn & Act"
-                        items={["Learn", "Donation"]}
+                        items={[
+                            { label: "Learn", path: "/learn" },
+                            { label: "Donation", path: "/donation" },
+                        ]}
                         isActive={activeDropdown === "Learn & Act"}
                         onClick={() =>
                             setActiveDropdown(
@@ -169,9 +193,9 @@ const Navbar: React.FC = () => {
                     <Dropdown
                         title="Community"
                         items={[
-                            "About Us",
-                            "Forum Discussions",
-                            "Terms & Conditions",
+                            { label: "About Us", path: "/about" },
+                            { label: "Forum Discussions", path: "/forum" },
+                            { label: "Terms & Conditions", path: "/terms" },
                         ]}
                         isActive={activeDropdown === "Community"}
                         onClick={() =>
