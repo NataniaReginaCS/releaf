@@ -28,24 +28,24 @@ const Footer = () => {
         <div className="md:ml-13">
           <h3 className="font-bold">Marketplace</h3>
           <ul className="text-sm space-y-1 mt-2">
-            <li>Overview</li>
-            <li>Shop Preloved Fashion</li>
-            <li>Upload Preloved Fashion</li>
+            <li><a href="/marketplace">Overview </a></li>
+            <li><a href="/view">Shop Preloved Fashion</a></li>
+            <li><a href="/upload">Upload Preloved Fashion</a></li>
           </ul>
         </div>
         <div className="md:ml-10">
           <h3 className="font-bold">Learn & Act</h3>
           <ul className="text-sm space-y-1 mt-2">
-            <li>Learn</li>
-            <li>Donation</li>
+            <li><a href="/learn">Learn</a></li>
+            <li><a href="/donation">Donation</a></li>
           </ul>
         </div>
         <div>
           <h3 className="font-bold">Community</h3>
           <ul className="text-sm space-y-1 mt-2">
-            <li>About Us</li>
-            <li>Forum Discussions</li>
-            <li>Terms & Conditions</li>
+            <li><a href="/community#startLearning">About Us</a></li>
+            <li><a href="/forum">Forum Discussions</a></li>
+            <li><a href="/term">Terms & Conditions</a></li>
           </ul>
         </div>
         <div className="mr-10 md:mr-0 mt-5 md:mt-0 ">
