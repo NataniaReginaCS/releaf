@@ -132,7 +132,10 @@ const Navbar: React.FC = () => {
                     <Dropdown
                         title="Community"
                         items={[
-                            { label: "About Us", path: "/about" },
+                            {
+                                label: "About Us",
+                                path: "/community#startLearning",
+                            },
                             { label: "Forum Discussions", path: "/forum" },
                             { label: "Terms & Conditions", path: "/term" },
                         ]}
@@ -193,7 +196,10 @@ const Navbar: React.FC = () => {
                     <Dropdown
                         title="Community"
                         items={[
-                            { label: "About Us", path: "/about" },
+                            {
+                                label: "About Us",
+                                path: "/community#startLearning",
+                            },
                             { label: "Forum Discussions", path: "/forum" },
                             { label: "Terms & Conditions", path: "/terms" },
                         ]}
