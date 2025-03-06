@@ -89,7 +89,7 @@ function ForumComponent() {
 									></path>
 								</svg>
 								<span className="ml-1 text-sm font-medium text-gray-500 md:ml-2">
-									Forum Discussions
+									Forum
 								</span>
 							</div>
 						</li>

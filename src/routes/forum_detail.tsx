@@ -7,7 +7,79 @@ export const Route = createFileRoute("/forum_detail")({
 
 function RouteComponent() {
 	return (
-		<div className="h-full text-black bg-white pb-15 pt-40 pe-15 ps-15 md:my-0 mt-0 text-black max-sm:pt-20 max-sm:pe-5 max-sm:ps-5">
+		<div className="h-full text-black bg-white pb-15 pe-32 ps-32 md:my-0 mt-0 text-black max-sm:pt-17 max-sm:pe-7 max-sm:ps-7 max-sm:pb-2">
+			<div className="mt-17  md:mb-20 max-sm:mt-0 mb-5">
+				<ol className="inline-flex items-center space-x-1 md:space-x-3">
+					<li className="inline-flex items-center">
+						<a
+							href="/"
+							className="inline-flex items-center text-sm font-medium text-gray-500 hover:text-green-300"
+						>
+							Home
+						</a>
+					</li>
+					<li>
+						<div className="flex items-center">
+							<svg
+								className="w-6 h-6 text-gray-400"
+								fill="currentColor"
+								viewBox="0 0 20 20"
+								xmlns="http://www.w3.org/2000/svg"
+							>
+								<path
+									fill-rule="evenodd"
+									d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+									clip-rule="evenodd"
+								></path>
+							</svg>
+							<a
+								href="/community"
+								className="ml-1 text-sm font-medium text-gray-500 hover:text-green-300 md:ml-2"
+							>
+								Community
+							</a>
+						</div>
+					</li>
+					<li>
+						<div className="flex items-center">
+							<svg
+								className="w-6 h-6 text-gray-400"
+								fill="currentColor"
+								viewBox="0 0 20 20"
+								xmlns="http://www.w3.org/2000/svg"
+							>
+								<path
+									fill-rule="evenodd"
+									d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+									clip-rule="evenodd"
+								></path>
+							</svg>
+							<span className="ml-1 text-sm font-medium text-gray-500 md:ml-2 ">
+								Forum
+							</span>
+						</div>
+					</li>
+					<li>
+						<div className="flex items-center">
+							<svg
+								className="w-6 h-6 text-gray-400"
+								fill="currentColor"
+								viewBox="0 0 20 20"
+								xmlns="http://www.w3.org/2000/svg"
+							>
+								<path
+									fill-rule="evenodd"
+									d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+									clip-rule="evenodd"
+								></path>
+							</svg>
+							<span className="ml-1 text-sm font-medium text-gray-500 md:ml-2">
+								Discussions
+							</span>
+						</div>
+					</li>
+				</ol>
+			</div>
 			<div className="w-full h-full flex flex-col">
 				<div className="w-full md:w-full grid grid-cols-1 md:grid-cols-1 gap-6 mb-13">
 					<div className="flex flex-col gap-y-2 bg-gray-100 p-4 rounded-lg ">
