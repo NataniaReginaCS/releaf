@@ -142,18 +142,15 @@ function Community() {
 							people to embrace preloved fashion and reduce waste. Join us in
 							our journey to create a greener future for all!
 						</p>
-						<div className="flex flex-col gap-3 mt-5 z-10">
+						<div className="flex flex-col gap-3 mt-5 z-10 w-4/5">
 							<p className="text-md bg-[#D5EEC6] rounded-full px-5 py-2 z-10 min-w-0 text-center md:text-left">
-								Hanger melambangkan fashion, sementara daun mewakili
-								keberlanjutan dan eco-friendly.
+								The hanger symbolizes fashion, while the leaves represent sustainability and eco-friendliness.
 							</p>
 							<p className="text-md bg-[#D5EEC6] rounded-full px-5 py-2 z-10 min-w-0 text-center md:text-left">
-								Hijau lembut dan warna earthy mencerminkan alam, kesegaran, dan
-								etika bisnis ramah lingkungan.
+								Soft greens and earthy colors reflect nature, freshness, and eco-friendly business ethics.
 							</p>
 							<p className="text-md bg-[#D5EEC6] rounded-full px-5 py-2 z-10 min-w-0 text-center md:text-left">
-								Minimalis dan modern, mencerminkan transparansi,
-								profesionalisme, dan produksi bertanggung jawab.
+								Minimalist and modern, reflecting transparency, professionalism and responsible production.
 							</p>
 						</div>
 					</div>

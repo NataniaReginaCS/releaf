@@ -59,6 +59,7 @@ function MarketplaceComponent() {
 					<p className="mt-7 text-xl max-sm:text-justify text-gray-600">
 						Discover stylish, sustainable, and affordable preloved fashion. Give
 						every piece a second life while reducing fashion waste!
+						<br /><br /> <span className="italic text-md">Step: Explore, Select, and Contact the Owner.</span> 
 					</p>
 					<button className="bg-[#FFD8BE] text-[#333333] px-4 py-2 mt-10 mb-4 rounded-lg w-48 hover:bg-green-100 cursor-pointer"onClick={() => (window.location.href = "/view")}>
 						Start Explore
@@ -81,6 +82,7 @@ function MarketplaceComponent() {
 					<p className="max-sm:text-justify  mt-7 text-xl text-gray-600">
 						Give your clothes a second life! List your preloved fashion, find
 						new owners, and contribute to a more sustainable future.
+						<br /><br /> <span className="italic text-md">Step: Upload and wait to be contacted.</span> 
 					</p>
 					<button
 						className="bg-[#FFD8BE] text-[#333333] px-4 py-2 mt-10 mb-4 rounded-lg w-48 hover:bg-green-100 cursor-pointer"

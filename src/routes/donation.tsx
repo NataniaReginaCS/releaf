@@ -93,43 +93,38 @@ function RouteComponent() {
 			</div>
 			<div className="space-y-5">
 				<h1 className="text-5xl font-bold text-center mt-40 max-sm:mt-15 max-sm:text-3xl">
-					Bagaimana Alur Donasi?
+					How does the donation process work?
 				</h1>
 				<p className="text-lg text-center max-sm:text-lg max-sm:text-start max-sm:ps-5">
-					Donasikan pakaian dengan mudah! Hubungi kami, tim akan menjemput,
-					menyortir, dan <br /> menyalurkan atau mendaur ulang pakaian untuk
-					keberlanjutan yang lebih baik.
+					Donate clothes easily! Contact us, our team will pick up, sort, and <br /> distribute or recycle clothes for better sustainability.
 				</p>
-				<div className="flex flex-row flex-wrap justify-around max-sm:flex-col max-sm:items-center max-sm:gap-y-10">
+				<div className="flex flex-row flex-wrap justify-around max-sm:flex-col max-sm:items-center max-sm:gap-y-10 md:mt-12">
 					<div className="flex flex-col justify-center rounded-3xl bg-white z-10 w-[20%] max-sm:w-2/3">
 						<img src={donation2} alt="maskot5" className="w-full" />
-						<div className="bg-[#D2D2D2] p-0 m-0 rounded-sm text-center pb-10">
-							<h2 className="text-2xl font-bold pt-5">Hubungi Kami</h2>
-							<p className="pt-5">
-								Kirimkan kontak Anda, tim kami akan mengatur penjemputan pakaian
-								donasi.
+						<div className="bg-[#D2D2D2] p-0 m-0 rounded-sm text-center pb-10 md:h-40">
+							<h2 className="text-2xl font-bold pt-5">Contact us</h2>
+							<p className="pt-5 px-2">
+								Send us your contact details, our team will arrange to pick up your donated clothes.
 							</p>
 						</div>
 					</div>
 
 					<div className="flex flex-col justify-center rounded-3xl bg-white z-10 w-[20%] max-sm:w-2/3">
 						<img src={donation3} alt="maskot5" className="w-full" />
-						<div className="bg-[#D2D2D2] p-0 m-0 rounded-sm text-center pb-10">
-							<h2 className="text-2xl font-bold pt-5">Hubungi Kami</h2>
-							<p className="pt-5">
-								Kirimkan kontak Anda, tim kami akan mengatur penjemputan pakaian
-								donasi.
+						<div className="bg-[#D2D2D2] p-0 m-0 rounded-sm text-center pb-10 md:h-40">
+							<h2 className="text-2xl font-bold pt-5">Filter</h2>
+							<p className="pt-5 px-2">
+								Clothes that are still in good condition will be distributed to those in need, while the rest will be recycled.
 							</p>
 						</div>
 					</div>
 
 					<div className="flex flex-col justify-center rounded-3xl bg-white z-10 w-[20%] max-sm:w-2/3">
-						<img src={donation4} alt="maskot5" className="w-full" />
-						<div className="bg-[#D2D2D2] p-0 m-0 rounded-sm text-center pb-10">
-							<h2 className="text-2xl font-bold pt-5">Hubungi Kami</h2>
-							<p className="pt-5">
-								Kirimkan kontak Anda, tim kami akan mengatur penjemputan pakaian
-								donasi.
+						<img src={donation4} alt="maskot5" className="w-full h-67" />
+						<div className="bg-[#D2D2D2] p-0 m-0 rounded-sm text-center pb-10 md:h-40">
+							<h2 className="text-2xl font-bold pt-5">Make a Positive Impact</h2>
+							<p className="pt-5 px-2">
+								Every donation helps reduce textile waste and supports environmental sustainability.
 							</p>
 						</div>
 					</div>
@@ -142,39 +137,33 @@ function RouteComponent() {
 				<div className="flex flex-row justify-around gap-10 mt-20 max-sm:flex-col max-sm:mt-10">
 					<div className="bg-white w-[25%] h-1/4 space-y-1  text-[#6F594A] max-sm:w-full">
 						<img src={quoteleft} className="place-self-start"alt="" />
-						<blockquote className="text-center">
-							Pakaian yang saya terima masih sangat bagus dan nyaman dipakai.
-							Terima kasih kepada semua yang telah berdonasi, ini sangat
-							membantu!
+						<blockquote className="text-center px-3">
+							The clothes I received are still very good and comfortable to wear. Thank you to everyone who has donated, it really helps!
 						</blockquote>
 						<blockquote className="text-center">
-							— Aisyah, 24 - Mahasiswa
+							— Aisyah, 24 - Student
 						</blockquote>
 						<img src={quoteright} className="place-self-end" alt="" />
 					</div>
 
           <div className="bg-white w-[25%] h-1/4 space-y-1  text-[#6F594A] max-sm:w-full">
 						<img src={quoteleft} className="place-self-start"alt="" />
-						<blockquote className="text-center">
-							Pakaian yang saya terima masih sangat bagus dan nyaman dipakai.
-							Terima kasih kepada semua yang telah berdonasi, ini sangat
-							membantu!
+						<blockquote className="text-center px-3">
+							I am grateful to be able to get wearable clothes from this donation. It is very useful for me and my family. Thank you
 						</blockquote>
 						<blockquote className="text-center">
-							— Aisyah, 24 - Mahasiswa
+							— Budi, 30 - Freelancer
 						</blockquote>
 						<img src={quoteright} className="place-self-end" alt="" />
 					</div>
 
           <div className="bg-white w-[25%] h-1/4 space-y-1  text-[#6F594A] max-sm:w-full">
 						<img src={quoteleft} className="place-self-start"alt="" />
-						<blockquote className="text-center">
-							Pakaian yang saya terima masih sangat bagus dan nyaman dipakai.
-							Terima kasih kepada semua yang telah berdonasi, ini sangat
-							membantu!
+						<blockquote className="text-center px-3">
+							These donated clothes really help us. Hopefully more people will share with others!
 						</blockquote>
-						<blockquote className="text-center">
-							— Aisyah, 24 - Mahasiswa
+						<blockquote className="text-center pt-6">
+							— Mother Rina, 40 - IRT
 						</blockquote>
 						<img src={quoteright} className="place-self-end" alt="" />
 					</div>
