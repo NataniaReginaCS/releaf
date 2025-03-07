@@ -29,7 +29,7 @@ function Community() {
 				className="absolute inset-0 w-full h-150 md:h-175 object-cover opacity-50  z-2"
 			/>
 			<div className="absolute top-0 w-full md:w-full bg-[#ACACAC] opacity-50 h-150 md:h-175 z-2"></div>
-			<section className="relative w-full bg-white flex flex-col items-center text-center px-5 py-20 md:pt-[30vh]  ">
+			<section className="relative w-full bg-white flex flex-col items-center text-center px-5 py-20 md:pt-[26vh]  ">
 				<h1 className="text-[#142E38] font-bold text-4xl md:text-6xl mb-5 z-10">
 					Join the ReLeaf Fashion Community
 				</h1>
@@ -142,7 +142,7 @@ function Community() {
 							people to embrace preloved fashion and reduce waste. Join us in
 							our journey to create a greener future for all!
 						</p>
-						<div className="flex flex-col gap-3 mt-5 z-10 w-4/5">
+						<div className="flex flex-col gap-3 mt-5 z-10 w-full">
 							<p className="text-md bg-[#D5EEC6] rounded-full px-5 py-2 z-10 min-w-0 text-center md:text-left">
 								The hanger symbolizes fashion, while the leaves represent sustainability and eco-friendliness.
 							</p>
