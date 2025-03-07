@@ -62,7 +62,7 @@ function JualComponent() {
 					</ol>
 				</div>
 				<div className="w-full relative  mt-5 ">
-					<h1 className="text-black text-[30px]">
+					<h1 className="text-black text-[30px] font-bold">
 						Lengkapi Detail Produk yang ingin dipasarkan
 					</h1>
 
@@ -88,7 +88,7 @@ function JualComponent() {
 											<div className="mt-4 flex text-sm/6 text-gray-600">
 												<label
 													htmlFor="file-upload"
-													className="relative cursor-pointer rounded-md bg-white font-semibold text-indigo-600 focus-within:ring-2 focus-within:ring-indigo-600 focus-within:ring-offset-2 focus-within:outline-hidden hover:text-indigo-500"
+													className="relative cursor-pointer rounded-md bg-white font-semibold text-[#ffb584] focus-within:ring-2 focus-within:ring-[#ffb584] focus-within:ring-offset-2 focus-within:outline-hidden hover:text-green-500"
 												>
 													<span>Upload a file</span>
 													<input
@@ -111,7 +111,7 @@ function JualComponent() {
 										Nama
 									</label>
 									<div className="mt-2">
-										<div className="flex items-center rounded-md bg-white pl-3 outline-1 -outline-offset-1 outline-gray-300 focus-within:outline-2 focus-within:-outline-offset-2 focus-within:outline-indigo-600">
+										<div className="flex items-center rounded-md bg-white pl-3 outline-1 -outline-offset-1 outline-gray-300 focus-within:outline-2 focus-within:-outline-offset-2 focus-within:outline-[#ffb584]">
 											<input
 												type="text"
 												name="nama"
@@ -134,7 +134,7 @@ function JualComponent() {
 										<textarea
 											name="deskripsi"
 											id="deskripsi"
-											className="block w-full rounded-md bg-white px-3 py-1.5 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600 sm:text-sm/6"
+											className="block w-full rounded-md bg-white px-3 py-1.5 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-[#ffb584] sm:text-sm/6"
 											rows={3}
 											placeholder="Deskripsi Produk"
 										></textarea>
@@ -150,13 +150,13 @@ function JualComponent() {
 									<div className="mt-3 space-y-6 flex flex-col sm:flex-row gap-x-15">
 										<div className="flex items-center gap-x-3">
 											<input
-												id="push-everything"
-												name="push-notifications"
+												id="push"
+												name="push-tiipe"
 												type="radio"
-												className="relative size-4 appearance-none rounded-full border border-gray-300 bg-white before:absolute before:inset-1 before:rounded-full before:bg-white not-checked:before:hidden checked:border-indigo-600 checked:bg-indigo-600 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 disabled:border-gray-300 disabled:bg-gray-100 disabled:before:bg-gray-400 forced-colors:appearance-auto forced-colors:before:hidden"
+												className="relative size-4 appearance-none rounded-full border border-gray-300 bg-white before:absolute before:inset-1 before:rounded-full before:bg-white not-checked:before:hidden checked:border-[#ffb584] checked:bg-[#ffb584] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#ffb584] disabled:border-gray-300 disabled:bg-gray-100 disabled:before:bg-gray-400 forced-colors:appearance-auto forced-colors:before:hidden"
 											/>
 											<label
-												htmlFor="push-everything"
+												htmlFor="push"
 												className="block text-sm/4 font-medium text-gray-900"
 											>
 												Atasan
@@ -165,13 +165,13 @@ function JualComponent() {
 
 										<div className="flex gap-x-3">
 											<input
-												id="push-everything"
-												name="push-notifications"
+												id="push"
+												name="push-tiipe"
 												type="radio"
-												className="relative size-4 appearance-none rounded-full border border-gray-300 bg-white before:absolute before:inset-1 before:rounded-full before:bg-white not-checked:before:hidden checked:border-indigo-600 checked:bg-indigo-600 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 disabled:border-gray-300 disabled:bg-gray-100 disabled:before:bg-gray-400 forced-colors:appearance-auto forced-colors:before:hidden"
+												className="relative size-4 appearance-none rounded-full border border-gray-300 bg-white before:absolute before:inset-1 before:rounded-full before:bg-white not-checked:before:hidden checked:border-[#ffb584] checked:bg-[#ffb584] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#ffb584] disabled:border-gray-300 disabled:bg-gray-100 disabled:before:bg-gray-400 forced-colors:appearance-auto forced-colors:before:hidden"
 											/>
 											<label
-												htmlFor="push-everything"
+												htmlFor="push"
 												className="block text-sm/4 font-medium text-gray-900"
 											>
 												Bawahan
@@ -180,13 +180,13 @@ function JualComponent() {
 
 										<div className="flex gap-x-3">
 											<input
-												id="push-everything"
-												name="push-notifications"
+												id="push"
+												name="push-tiipe"
 												type="radio"
-												className="relative size-4 appearance-none rounded-full border border-gray-300 bg-white before:absolute before:inset-1 before:rounded-full before:bg-white not-checked:before:hidden checked:border-indigo-600 checked:bg-indigo-600 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 disabled:border-gray-300 disabled:bg-gray-100 disabled:before:bg-gray-400 forced-colors:appearance-auto forced-colors:before:hidden"
+												className="relative size-4 appearance-none rounded-full border border-gray-300 bg-white before:absolute before:inset-1 before:rounded-full before:bg-white not-checked:before:hidden checked:border-[#ffb584] checked:bg-[#ffb584] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#ffb584] disabled:border-gray-300 disabled:bg-gray-100 disabled:before:bg-gray-400 forced-colors:appearance-auto forced-colors:before:hidden"
 											/>
 											<label
-												htmlFor="push-everything"
+												htmlFor="push"
 												className="block text-sm/4 font-medium text-gray-900"
 											>
 												One Set
@@ -205,7 +205,7 @@ function JualComponent() {
 												id="push-everything"
 												name="push-notifications"
 												type="radio"
-												className="relative size-4 appearance-none rounded-full border border-gray-300 bg-white before:absolute before:inset-1 before:rounded-full before:bg-white not-checked:before:hidden checked:border-indigo-600 checked:bg-indigo-600 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 disabled:border-gray-300 disabled:bg-gray-100 disabled:before:bg-gray-400 forced-colors:appearance-auto forced-colors:before:hidden"
+												className="relative size-4 appearance-none rounded-full border border-gray-300 bg-white before:absolute before:inset-1 before:rounded-full before:bg-white not-checked:before:hidden checked:border-[#ffb584] checked:bg-[#ffb584] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#ffb584] disabled:border-gray-300 disabled:bg-gray-100 disabled:before:bg-gray-400 forced-colors:appearance-auto forced-colors:before:hidden"
 											/>
 											<label
 												htmlFor="push-everything"
@@ -220,7 +220,7 @@ function JualComponent() {
 												id="push-everything"
 												name="push-notifications"
 												type="radio"
-												className="relative size-4 appearance-none rounded-full border border-gray-300 bg-white before:absolute before:inset-1 before:rounded-full before:bg-white not-checked:before:hidden checked:border-indigo-600 checked:bg-indigo-600 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 disabled:border-gray-300 disabled:bg-gray-100 disabled:before:bg-gray-400 forced-colors:appearance-auto forced-colors:before:hidden"
+												className="relative size-4 appearance-none rounded-full border border-gray-300 bg-white before:absolute before:inset-1 before:rounded-full before:bg-white not-checked:before:hidden checked:border-[#ffb584] checked:bg-[#ffb584] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#ffb584] disabled:border-gray-300 disabled:bg-gray-100 disabled:before:bg-gray-400 forced-colors:appearance-auto forced-colors:before:hidden"
 											/>
 											<label
 												htmlFor="push-everything"
@@ -235,7 +235,7 @@ function JualComponent() {
 												id="push-everything"
 												name="push-notifications"
 												type="radio"
-												className="relative size-4 appearance-none rounded-full border border-gray-300 bg-white before:absolute before:inset-1 before:rounded-full before:bg-white not-checked:before:hidden checked:border-indigo-600 checked:bg-indigo-600 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 disabled:border-gray-300 disabled:bg-gray-100 disabled:before:bg-gray-400 forced-colors:appearance-auto forced-colors:before:hidden"
+												className="relative size-4 appearance-none rounded-full border border-gray-300 bg-white before:absolute before:inset-1 before:rounded-full before:bg-white not-checked:before:hidden checked:border-[#ffb584] checked:bg-[#ffb584] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#ffb584] disabled:border-gray-300 disabled:bg-gray-100 disabled:before:bg-gray-400 forced-colors:appearance-auto forced-colors:before:hidden"
 											/>
 											<label
 												htmlFor="push-everything"
@@ -249,7 +249,7 @@ function JualComponent() {
 												id="push-everything"
 												name="push-notifications"
 												type="radio"
-												className="relative size-4 appearance-none rounded-full border border-gray-300 bg-white before:absolute before:inset-1 before:rounded-full before:bg-white not-checked:before:hidden checked:border-indigo-600 checked:bg-indigo-600 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 disabled:border-gray-300 disabled:bg-gray-100 disabled:before:bg-gray-400 forced-colors:appearance-auto forced-colors:before:hidden"
+												className="relative size-4 appearance-none rounded-full border border-gray-300 bg-white before:absolute before:inset-1 before:rounded-full before:bg-white not-checked:before:hidden checked:border-[#ffb584] checked:bg-[#ffb584] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 disabled:border-gray-300 disabled:bg-gray-100 disabled:before:bg-gray-400 forced-colors:appearance-auto forced-colors:before:hidden"
 											/>
 											<label
 												htmlFor="push-everything"
@@ -271,7 +271,7 @@ function JualComponent() {
 										Harga
 									</label>
 									<div className="mt-2">
-										<div className="flex items-center w-[32.3%] max-sm:w-full max-lg:w-[31.5%] rounded-md bg-white pl-3 outline-1 -outline-offset-1 outline-gray-300 focus-within:outline-2 focus-within:-outline-offset-2 focus-within:outline-indigo-600">
+										<div className="flex items-center w-[32.3%] max-sm:w-full max-lg:w-[31.5%] rounded-md bg-white pl-3 outline-1 -outline-offset-1 outline-gray-300 focus-within:outline-2 focus-within:-outline-offset-2 focus-within:outline-[#ffb584]">
 											<div className="shrink-0 text-base text-gray-500 select-none sm:text-sm/6">
 												Rp
 											</div>
@@ -298,7 +298,7 @@ function JualComponent() {
 											type="text"
 											name="first-name"
 											id="first-name"
-											className="block w-full rounded-md bg-white px-3 py-1.5 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600 sm:text-sm/6"
+											className="block w-full rounded-md bg-white px-3 py-1.5 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-[#ffb584] sm:text-sm/6"
 											placeholder="0877XXXXXXXX"
 										/>
 									</div>
@@ -316,7 +316,7 @@ function JualComponent() {
 											type="email"
 											name="first-name"
 											id="first-name"
-											className="block w-full rounded-md bg-white px-3 py-1.5 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600 sm:text-sm/6"
+											className="block w-full rounded-md bg-white px-3 py-1.5 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-[#ffb584] sm:text-sm/6"
 											placeholder="abcde@gmail.com"
 										/>
 									</div>
@@ -334,7 +334,7 @@ function JualComponent() {
 											type="text"
 											name="city"
 											id="city"
-											className="block w-full rounded-md bg-white px-3 py-1.5 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600 sm:text-sm/6"
+											className="block w-full rounded-md bg-white px-3 py-1.5 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-[#ffb584] sm:text-sm/6"
 											placeholder="Jl.Anggrek..."
 										/>
 									</div>
@@ -354,7 +354,7 @@ function JualComponent() {
 															name="comments"
 															type="checkbox"
 															checked
-															className="col-start-1 row-start-1 appearance-none rounded-sm border border-gray-300 bg-white checked:border-indigo-600 checked:bg-indigo-600 indeterminate:border-indigo-600 indeterminate:bg-indigo-600 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 disabled:border-gray-300 disabled:bg-gray-100 disabled:checked:bg-gray-100 forced-colors:appearance-auto"
+															className="col-start-1 row-start-1 appearance-none rounded-sm border border-gray-300 bg-white checked:border-[#ffb584] checked:bg-[#ffb584] indeterminate:border-[#ffb584] indeterminate:bg-[#ffb584] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#ffb584] disabled:border-gray-300 disabled:bg-gray-100 disabled:checked:bg-gray-100 forced-colors:appearance-auto"
 														/>
 														<svg
 															className="pointer-events-none col-start-1 row-start-1 size-3.5 self-center justify-self-center stroke-white group-has-disabled:stroke-gray-950/25"
@@ -384,9 +384,9 @@ function JualComponent() {
 														className="font-medium text-gray-900"
 													>
 														I read and agree to{" "}
-														<span className="text-cyan-500">
+														<a className="text-[#ffb584]" href="/term">
 															terms and conditions
-														</span>
+														</a>
 													</label>
 												</div>
 											</div>

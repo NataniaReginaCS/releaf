@@ -81,7 +81,7 @@ function RouteComponent() {
 					</p>
 					<button
 						type="submit"
-						className="bg-[#FFD8BE] place-self-start justify-center rounded-full font-bold text-lg flex w-1/4 px-3 py-2 text-sm md:ms-7 text-black shadow-xs hover:bg-green-100 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 max-sm:w-2/3 max-sm:place-self-center "
+						className="bg-[#FFD8BE] place-self-start justify-center rounded-full flex w-1/4 px-3 py-2 text-sm md:ms-7 md:text-lg  shadow-xs hover:bg-green-100 focus-visible:outline-2 focus-visible:outline-offset-2 max-sm:w-2/3 max-sm:place-self-center "
 					>
 						Contact Us
 					</button>
