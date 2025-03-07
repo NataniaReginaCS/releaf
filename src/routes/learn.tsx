@@ -124,7 +124,7 @@ function LearnAndActComponent() {
 					</div>
 				</div>
 			</section>
-			<section className="pt-20 md:pt-40 px-5 md:px-0 bg-white text-[#333333] pb-20 md:pb-30">
+			<section className="pt-20 md:pt-40 px-5 md:px-0 bg-white text-[#333333] pb-20 md:pb-30 ">
 				<h1 className="text-3xl md:text-4xl font-bold text-center">
 					Benefits of Exchanging Clothes Compared to Buying New Clothes
 				</h1>
@@ -154,7 +154,7 @@ function LearnAndActComponent() {
 							Supporting a Circular Economy
 						</h2>
 						<p className="pt-5">
-Swapping clothes extends the life cycle of clothing by reusing them, while encouraging more sustainable and responsible consumption patterns.
+							Swapping clothes extends the life cycle of clothing by reusing them, while encouraging more sustainable and responsible consumption patterns.
 						</p>
 					</div>
 				</div>
