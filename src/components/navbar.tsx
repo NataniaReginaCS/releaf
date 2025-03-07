@@ -201,7 +201,7 @@ const Navbar: React.FC = () => {
                                 path: "/community#startLearning",
                             },
                             { label: "Forum Discussions", path: "/forum" },
-                            { label: "Terms & Conditions", path: "/terms" },
+                            { label: "Terms & Conditions", path: "/term" },
                         ]}
                         isActive={activeDropdown === "Community"}
                         onClick={() =>
