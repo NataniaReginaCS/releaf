@@ -5,7 +5,7 @@ import maskot3 from "../assets/maskot3.png";
 import maskot4 from "../assets/maskot4.png";
 import maskot5 from "../assets/maskot5.png";
 import maskot6 from "../assets/maskot6.png";
-import list from "../assets/check.png";
+import check from "../assets/check.png";
 
 export const Route = createFileRoute("/learn")({
 	component: LearnAndActComponent,
@@ -116,7 +116,7 @@ function LearnAndActComponent() {
 							Tips Cerdas Merawat Pakaian{" "}
 						</h1>
 						<ul
-							className={`list-image-[url(${list})] mt-10 md:ml-10 mx-20 max-sm:text-justify text-left`}
+							className="list-image-[url(${check})] list-outside list-disc mt-10 md:ml-10 mx-20 max-sm:text-justify text-left"
 						>
 							<li className="pl-3 ml:pl-0 mb-5 align-top">
 								Menggunakan air dingin membantu menjaga warna dan serat kain

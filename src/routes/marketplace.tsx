@@ -26,15 +26,14 @@ function MarketplaceComponent() {
 						Discover and sell preloved fashion—give your clothes a new home
 						while embracing sustainable style.
 					</p>
-					<div className="mt-6 grid grid-cols-2 md:flex md:space-x-6 text-xl">
-						<div className="flex flex-col items-center md:items-start">
-							<h2 className="text-3xl font-bold text-gray-800">500+</h2>
-							<p className="text-xl text-gray-600">Successful Transactions</p>
+					<div className="mt-6 grid grid-cols-2 md:flex md:space-x-6 text-xl ">
+						<div className="flex flex-col items-center md:items-start max-sm:mr-2">
+							<h2 className="text-3xl font-bold text-gray-800 ">500+</h2>
+							<p className="text-xl text-gray-600  max-sm:pt-2">Successful Transactions</p>
 						</div>
-						<div className="hidden md:block border-l border-gray-300 h-full"></div>
-						<div className="flex flex-col items-center md:items-start md:mt-0">
+						<div className="flex flex-col items-center md:items-start md:mt-0 md:border-l border-grey-100 md:pl-7">
 							<h2 className="text-3xl font-bold text-gray-800">250+</h2>
-							<p className="text-xl text-gray-600">
+							<p className="text-xl text-gray-600 max-sm:pt-2">
 								Preloved Items Given a New Life
 							</p>
 						</div>
