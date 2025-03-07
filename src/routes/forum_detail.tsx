@@ -106,14 +106,14 @@ function RouteComponent() {
 					</div>
 					<div className="flex flex-row items-center space-x-3 text-[#333333]">
 						<BsChatDotsFill />
-						<p className="text-black p-0 m-0">3 Komentar</p>
+						<p className="text-black p-0 m-0">3 Comments</p>
 					</div>
 					<hr className="border-solid border-[#0000001A]" />
 
 					<div className=" mt-5 md:mt-10 md:clear-right max-sm:w-full max-sm:mx-0 max-sm:mt-5">
 						<form className="bg-white p-4 shadow-md md:shadow-xl rounded-lg text-[#18171D] md:w-full md:px-10">
 							<h1 className="text-xl md:text-3xl font-medium text-start md:mb-10">
-								Tuliskan Komentar
+								Write a Comment
 							</h1>
 							<input
 								type="text"
@@ -156,7 +156,7 @@ function RouteComponent() {
 							<div className="flex flex-row justify-between max-sm:flex-col max-sm:space-y-5">
 								<div className="flex flex-row items-center space-x-3 text-[#333333]">
 									<BsChatDotsFill />
-									<p className="text-black p-0 m-0">1 Komentar</p>
+									<p className="text-black p-0 m-0">1 Comment</p>
 								</div>
 
 								<button
@@ -180,7 +180,7 @@ function RouteComponent() {
 							<div className="flex flex-row justify-between max-sm:flex-col max-sm:space-y-5">
 								<div className="flex flex-row items-center space-x-3 text-[#333333]">
 									<BsChatDotsFill />
-									<p className="text-black p-0 m-0">1 Komentar</p>
+									<p className="text-black p-0 m-0">0 Comment</p>
 								</div>
 
 								<button
@@ -203,7 +203,7 @@ function RouteComponent() {
 							<div className="flex flex-row justify-between max-sm:flex-col max-sm:space-y-5">
 								<div className="flex flex-row items-center space-x-3 text-[#333333]">
 									<BsChatDotsFill />
-									<p className="text-black p-0 m-0">1 Komentar</p>
+									<p className="text-black p-0 m-0">0 Comment</p>
 								</div>
 
 								<button

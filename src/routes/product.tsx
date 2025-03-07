@@ -121,12 +121,10 @@ function ProdukComponent() {
 				</div>
 
 				<div className="max-w-sm order-last">
-					<h2 className="text-2xl font-bold">Kaos oblong</h2>
+					<h2 className="text-2xl font-bold">T-shirt</h2>
 					<p className="text-xl font-semibold text-gray-700">Rp 30.000</p>
 					<p className="text-gray-600 mt-2 mb-4">
-						Kaos oblong - Bahan katun combed 30s yang nyaman dan adem. Desain
-						yang elegan dan kekinian. Tersedia dalam ukuran S-XL dan berbagai
-						pilihan warna.
+						T-shirt - Comfortable and cool 30s combed cotton material. Elegant and contemporary design. Available in sizes small and various color choices.
 					</p>
 					<hr className="text-gray-300 text-4" />
 					<div className="mt-4 mb-4">
@@ -137,7 +135,7 @@ function ProdukComponent() {
 					</div>
 					<hr className="text-gray-300" />
 					<div className="mt-4 mb-4">
-						<h3 className="text-gray-700 font-semibold">Hubungi:</h3>
+						<h3 className="text-gray-700 font-semibold">Contact:</h3>
 						<p className="flex items-center gap-2 text-gray-600">
 							📱 +62896548528
 						</p>
@@ -148,7 +146,7 @@ function ProdukComponent() {
 
 					<hr className="text-gray-300" />
 					<div className="mt-4 mb-4">
-						<h3 className="text-gray-700 font-semibold">Lokasi:</h3>
+						<h3 className="text-gray-700 font-semibold">Location:</h3>
 						<p className="text-gray-600">Jalan Anggrek No.20 Yogyakarta</p>
 					</div>
 					<hr className="text-gray-300" />

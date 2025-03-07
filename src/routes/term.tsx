@@ -83,88 +83,65 @@ function TermComponent() {
 			</div>
 
 			<div className=" space-y-5 max-sm:px-5">
-				<h1 className="text-black font-bold text-3xl">Pengenalan</h1>
+				<h1 className="text-black font-bold text-3xl">Introduction</h1>
 				<p className="text-black mt-5 text-lg">
-					Selamat datang di ReLeaf Fashion! Platform ini bertujuan untuk
-					mendukung gaya hidup berkelanjutan melalui pertukaran dan jual-beli
-					pakaian preloved, serta inisiatif donasi pakaian. Dengan menggunakan
-					situs web ini, Anda menyetujui syarat dan ketentuan berikut.
+					Welcome to ReLeaf Fashion! This platform aims to support sustainable lifestyles through the exchange and sale of preloved clothing, as well as clothing donation initiatives. By using this website, you agree to the following terms and conditions.
 				</p>
 				<h1 className="text-black font-bold text-3xl">
-					Layanan yang Disediakan
+					Services Provided
 				</h1>
-				<p className="text-black text-lg">Releaf fashion menyediakan:</p>
+				<p className="text-black text-lg">Releaf Fashion provides:</p>
 				<ol className="list-outside list-decimal pl-4 md:pl-4">
 					<li>
-						<span className="font-bold text-lg">Marketplace :</span> Tempat
-						untuk mencari dan menjual pakaian preloved, memungkinkan pengguna
-						menemukan pilihan fashion yang lebih ramah lingkungan. Menampilkan
-						galeri pakaian preloved yang tersedia untuk ditukar. Transaksi
-						dilakukan langsung oleh pengguna tanpa campur tangan platform.
+						<span className="font-bold text-lg">Marketplace :</span> A place to find and sell preloved clothing, allowing users to find more sustainable fashion options. Showcasing a gallery of preloved clothing available for exchange. Transactions are made directly by users without platform intervention.
 					</li>
 					<li>
-						<span className="font-bold text-lg">Learn & Act:</span> Akses ke
-						berbagai materi edukasi seputar fashion berkelanjutan serta panduan
-						untuk berdonasi pakaian yang masih layak pakai.
+						<span className="font-bold text-lg">Learn & Act :</span> Access to a variety of educational materials about sustainable fashion as well as a guide to donating clothes that are still fit to wear.
 					</li>
 					<li>
-						<span className="font-bold text-lg">Community</span> Ruang bagi
-						pengguna untuk terhubung melalui forum diskusi, berbagi pengalaman,
-						serta mendapatkan informasi terbaru tentang gaya hidup
-						berkelanjutan.
+						<span className="font-bold text-lg">Community :</span> Space for users to connect through discussion forums, share experiences, and get the latest information on sustainable lifestyles.
 					</li>
 				</ol>
-				<h1 className="font-bold text-3xl">Ketentuan Donasi Pakaian</h1>
+				<h1 className="font-bold text-3xl">Donation Terms</h1>
 				<ol className="list-outside list-decimal pl-4 md:pl-4">
 					<li className="text-lg">
-						Pengguna dapat menghubungi tim ReLeaf Fashion melalui kontak yang
-						tersedia untuk mengatur pengambilan donasi
+						Users can contact the ReLeaf Fashion team through the available contacts to arrange donation pickup.
 					</li>
 					<li className="text-lg">
-						Pakaian yang didonasikan akan disalurkan kepada mereka yang
-						membutuhkan atau didaur ulang jika tidak layak pakai.
+						Donated clothes will be distributed to those in need or recycled if they are no longer suitable for use.
 					</li>
 				</ol>
-				<h1 className="font-bold text-3xl">Forum Diskusi dan Komunitas</h1>
+				<h1 className="font-bold text-3xl">Discussion Forums and Communities</h1>
 				<ol className="list-outside list-decimal pl-4 md:pl-4">
 					<li className="text-lg">
-						Forum digunakan untuk berbagi informasi dan diskusi terkait
-						sustainable fashion.
+						The forum is used to share information and discussions related to sustainable fashion.
 					</li>
 					<li className="text-lg">
-						Pengguna dilarang memposting konten yang mengandung unsur SARA,
-						diskriminatif, atau melanggar hukum.
+						Users are prohibited from posting content that contains elements of SARA, is discriminatory, or violates the law.
 					</li>
 					<li className="text-lg">
-						ReLeaf Fashion berhak menghapus konten yang dianggap tidak sesuai
-						dengan pedoman komunitas.
+						ReLeaf Fashion reserves the right to remove content that is deemed not in accordance with community guidelines.
 					</li>
 				</ol>
-				<h1 className="font-bold text-3xl">Batasan Tanggung Jawab</h1>
+				<h1 className="font-bold text-3xl">Limitation of Liability</h1>
 				<ol className="list-outside list-decimal pl-4 md:pl-4">
 					<li className="text-lg">
-						ReLeaf Fashion hanya menyediakan platform untuk menampilkan
-						informasi dan tidak terlibat dalam transaksi atau pertukaran
-						langsung.
+						ReLeaf Fashion only provides a platform to display information and is not involved in any direct transactions or exchanges.
 					</li>
 					<li className="text-lg">
-						Kami tidak bertanggung jawab atas produk yang ditampilkan di
-						marketplace atau galeri tukar pakaian.
+						We are not responsible for the products displayed in the marketplace or clothing swap gallery.
 					</li>
 					<li className="text-lg">
-						Segala bentuk transaksi yang terjadi merupakan tanggung jawab
-						pengguna sepenuhnya.
+						All transactions that occur are the full responsibility of the user.
 					</li>
 				</ol>
-				<h1 className="font-bold text-3xl">Perubahan dan Pembaruan</h1>
+				<h1 className="font-bold text-3xl">Changes and Updates</h1>
 				<p className="text-lg">
-					Kami berhak memperbarui atau mengubah syarat dan ketentuan ini kapan
-					saja. Perubahan akan diinformasikan melalui situs web.
+					We reserve the right to update or change these terms and conditions at any time. Changes will be notified through the website.
 				</p>
-				<h1 className="font-bold text-3xl">Kontak</h1>
+				<h1 className="font-bold text-3xl">Contact</h1>
 				<p className="text-lg">
-					Jika ada pertanyaan terkait syarat dan ketentuan ini, silakan hubungi
-					kami melalui kontak yang tersedia di situs web.
+					If you have any questions regarding these terms and conditions, please contact us via the contact details provided on the website.
 				</p>
 			</div>
 		</div>

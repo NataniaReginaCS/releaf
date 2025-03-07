@@ -11,13 +11,13 @@ import fashion6 from "../assets/fashion6.png";
 const products = [
 	{
 		id: 1,
-		name: "Baju Warna warni",
+		name: "Colorful Clothes",
 		price: 25000,
 		image: fashion1,
 	},
 	{
 		id: 2,
-		name: "One Set Dress hijau",
+		name: "One Set Green Dress",
 		price: 25000,
 		image: fashion2,
 	},
@@ -27,10 +27,10 @@ const products = [
 		price: 25000,
 		image: fashion3,
 	},
-	{ id: 4, name: "Baju Olahraga", price: 25000, image: fashion4 },
+	{ id: 4, name: "Tracksuits", price: 25000, image: fashion4 },
 	{
 		id: 5,
-		name: "Oneset baju imut",
+		name: "Cute one set clothes",
 		price: 25000,
 		image: fashion5,
 	},
@@ -110,11 +110,11 @@ function ViewComponent() {
 						<hr />
 						<div className="mb-4 mt-4">
 							<div className="flex items-center justify-between">
-								<span>Atasan</span>
+								<span>Tops</span>
 								<FaAngleRight style={{ color: "gray" }} />
 							</div>
 							<div className="flex items-center justify-between">
-								<span>Bawahan</span>
+								<span>Bottoms</span>
 								<FaAngleRight style={{ color: "gray" }} />
 							</div>
 							<div className="flex items-center justify-between">
@@ -124,10 +124,10 @@ function ViewComponent() {
 						</div>
 						<hr />
 						<div className="mb-4">
-							<h3 className="font-medium my-2">Harga</h3>
+							<h3 className="font-medium my-2">Price</h3>
 							<div>
 								<input type="radio" name="price" id="low" className="mr-2" />
-								<label htmlFor="low">Hingga Rp 50.000</label>
+								<label htmlFor="low">Up to Rp 50.000</label>
 							</div>
 							<div>
 								<input type="radio" name="price" id="mid" className="mr-2" />
@@ -135,12 +135,12 @@ function ViewComponent() {
 							</div>
 							<div>
 								<input type="radio" name="price" id="high" className="mr-2" />
-								<label htmlFor="high">Diatas Rp 100.000</label>
+								<label htmlFor="high">Above Rp 100.000</label>
 							</div>
 						</div>
 						<hr />
 						<div>
-							<h3 className="font-medium my-2">Ukuran</h3>
+							<h3 className="font-medium my-2">Size</h3>
 							<div className="flex flex-wrap gap-y-5 gap-x-5 pb-2">
 								<button className="bg-[#FFD8BE] rounded-full w-[30%]">
 									Small
@@ -158,14 +158,14 @@ function ViewComponent() {
 						</div>
 						<hr />
 						<button className="bg-[#FFD8BE] px-4 py-2 rounded-full w-full mt-4">
-							Terapkan
+							Apply
 						</button>
 					</div>
 
 					<div className="w-full h-full flex flex-col">
 						<input
 							type="text"
-							placeholder="Cari Produk"
+							placeholder="Search Products"
 							className="w-full mb-4 border rounded-full px-4 py-2 w-80 border-none outline-none bg-gray-100"
 							value={search}
 							onChange={(e) => setSearch(e.target.value)}

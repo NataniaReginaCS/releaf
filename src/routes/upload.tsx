@@ -63,7 +63,7 @@ function JualComponent() {
 				</div>
 				<div className="w-full relative  mt-5 ">
 					<h1 className="text-black text-[30px] font-bold">
-						Lengkapi Detail Produk yang ingin dipasarkan
+						Complete the product details you want to market
 					</h1>
 
 					<form>
@@ -108,7 +108,7 @@ function JualComponent() {
 										htmlFor="nama"
 										className="block text-sm/6 font-medium text-gray-900"
 									>
-										Nama
+										Product Name
 									</label>
 									<div className="mt-2">
 										<div className="flex items-center rounded-md bg-white pl-3 outline-1 -outline-offset-1 outline-gray-300 focus-within:outline-2 focus-within:-outline-offset-2 focus-within:outline-[#ffb584]">
@@ -128,7 +128,7 @@ function JualComponent() {
 										htmlFor="deskripsi"
 										className="block text-sm/6 font-medium text-gray-900"
 									>
-										Deskripsi
+										Product Description
 									</label>
 									<div className="mt-2">
 										<textarea
@@ -145,9 +145,9 @@ function JualComponent() {
 							<div className="mt-5 space-y-4">
 								<fieldset>
 									<legend className="text-sm/6 font-semibold text-gray-900">
-										Tipe Pakaian
+										Type of Clothing
 									</legend>
-									<div className="mt-3 space-y-6 flex flex-col sm:flex-row gap-x-15">
+									<div className="mt-3 space-y-6 flex flex-col sm:flex-row gap-x-14.5">
 										<div className="flex items-center gap-x-3">
 											<input
 												id="push"
@@ -159,7 +159,7 @@ function JualComponent() {
 												htmlFor="push"
 												className="block text-sm/4 font-medium text-gray-900"
 											>
-												Atasan
+												Tops
 											</label>
 										</div>
 
@@ -174,7 +174,7 @@ function JualComponent() {
 												htmlFor="push"
 												className="block text-sm/4 font-medium text-gray-900"
 											>
-												Bawahan
+												Bottoms
 											</label>
 										</div>
 
@@ -197,9 +197,9 @@ function JualComponent() {
 
 								<fieldset>
 									<legend className="text-sm/6 font-semibold text-gray-900">
-										Ukuran
+										Size
 									</legend>
-									<div className="mt-3 space-y-6 flex flex-col sm:flex-row gap-x-17">
+									<div className="mt-3 space-y-6 flex flex-col sm:flex-row gap-x-14">
 										<div className="flex items-center gap-x-3">
 											<input
 												id="push-everything"
@@ -215,12 +215,12 @@ function JualComponent() {
 											</label>
 										</div>
 
-										<div className="flex gap-x-3">
+										<div className="flex gap-x-3 ">
 											<input
 												id="push-everything"
 												name="push-notifications"
 												type="radio"
-												className="relative size-4 appearance-none rounded-full border border-gray-300 bg-white before:absolute before:inset-1 before:rounded-full before:bg-white not-checked:before:hidden checked:border-[#ffb584] checked:bg-[#ffb584] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#ffb584] disabled:border-gray-300 disabled:bg-gray-100 disabled:before:bg-gray-400 forced-colors:appearance-auto forced-colors:before:hidden"
+												className=" relative size-4 appearance-none rounded-full border border-gray-300 bg-white before:absolute before:inset-1 before:rounded-full before:bg-white not-checked:before:hidden checked:border-[#ffb584] checked:bg-[#ffb584] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#ffb584] disabled:border-gray-300 disabled:bg-gray-100 disabled:before:bg-gray-400 forced-colors:appearance-auto forced-colors:before:hidden"
 											/>
 											<label
 												htmlFor="push-everything"
@@ -268,7 +268,7 @@ function JualComponent() {
 										htmlFor="username"
 										className="block text-sm/6 font-medium text-gray-900"
 									>
-										Harga
+										Price
 									</label>
 									<div className="mt-2">
 										<div className="flex items-center w-[32.3%] max-sm:w-full max-lg:w-[31.5%] rounded-md bg-white pl-3 outline-1 -outline-offset-1 outline-gray-300 focus-within:outline-2 focus-within:-outline-offset-2 focus-within:outline-[#ffb584]">
@@ -291,7 +291,7 @@ function JualComponent() {
 										htmlFor="first-name"
 										className="block text-sm/6 font-medium text-gray-900"
 									>
-										Nomor Telepon
+										Phone number
 									</label>
 									<div className="mt-2">
 										<input
@@ -327,7 +327,7 @@ function JualComponent() {
 										htmlFor="city"
 										className="block text-sm/6 font-medium text-gray-900"
 									>
-										Lokasi
+										Location
 									</label>
 									<div className="mt-2">
 										<input
