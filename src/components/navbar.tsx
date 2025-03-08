@@ -27,12 +27,14 @@ const Dropdown: React.FC<DropdownProps> = ({
       {isActive && (
         <ul className="absolute left-0 mt-2 w-48 bg-white rounded-lg shadow-lg z-50">
           {items.map((item, index) => (
-            <li
-              key={index}
-              className="px-4 py-2 hover:bg-gray-100 cursor-pointer"
-            >
-              <Link to={item.path}>{item.label}</Link>
-            </li>
+            <Link to={item.path}>
+              <li
+                key={index}
+                className="px-4 py-2 hover:bg-gray-100 cursor-pointer"
+              >
+                {item.label}
+              </li>
+            </Link>
           ))}
         </ul>
       )}
