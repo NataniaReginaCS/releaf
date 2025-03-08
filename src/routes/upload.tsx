@@ -394,12 +394,11 @@ function JualComponent() {
                   </fieldset>
                 </div>
                 <div className="col-span-1 flex justify-end items-end">
-                  <button
-                    type="submit"
-                    className="rounded-md bg-[#FFD8BE] w-3/6 max-sm:w-full max-sm:mt-5 px-3 py-2 text-sm  text-black shadow-xs hover:bg-green-100 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
-                  >
-                    Upload Produk
-                  </button>
+                  <Link to="/view">
+                    <button className="rounded-md bg-[#FFD8BE] w-3/6 max-sm:w-full max-sm:mt-5 px-3 py-2 text-sm  text-black shadow-xs hover:bg-green-100 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">
+                      Upload Produk
+                    </button>
+                  </Link>
                 </div>
               </div>
             </div>
