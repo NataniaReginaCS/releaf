@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { createFileRoute } from "@tanstack/react-router";
+import { createFileRoute, Link } from "@tanstack/react-router";
 import { FaAngleRight, FaSistrix } from "react-icons/fa6";
 import fashion1 from "../assets/fashion1.png";
 import fashion2 from "../assets/fashion2.png";
@@ -54,12 +54,12 @@ function ViewComponent() {
         <div className="mt-17   mx-7 md:mx-32  max-sm:mt-1">
           <ol className="inline-flex items-center space-x-1 md:space-x-3">
             <li className="inline-flex items-center">
-              <a
-                href="/"
+              <Link
+                to="/"
                 className="inline-flex items-center text-sm font-medium text-gray-500 hover:text-green-300"
               >
                 Home
-              </a>
+              </Link>
             </li>
             <li>
               <div className="flex items-center">
@@ -75,12 +75,12 @@ function ViewComponent() {
                     clip-rule="evenodd"
                   ></path>
                 </svg>
-                <a
-                  href="/marketplace"
+                <Link
+                  to="/marketplace"
                   className="ml-1 text-sm font-medium text-gray-500 hover:text-green-300 md:ml-2"
                 >
                   Marketplace
-                </a>
+                </Link>
               </div>
             </li>
             <li>
@@ -170,7 +170,7 @@ function ViewComponent() {
               value={search}
               onChange={(e) => setSearch(e.target.value)}
             />
-            <a href="/product" className="cursor-pointer">
+            <Link to="/product" className="cursor-pointer">
               <div className="w-full md:w-full grid grid-cols-1 md:grid-cols-3 gap-6">
                 {products
                   .filter((p) =>
@@ -192,7 +192,7 @@ function ViewComponent() {
                     </div>
                   ))}
               </div>
-            </a>
+            </Link>
           </div>
         </div>
       </div>

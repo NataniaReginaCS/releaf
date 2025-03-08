@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import icon from "../assets/icon.png";
 import { FaFacebook, FaInstagram, FaTiktok } from "react-icons/fa6";
+import { Link } from "@tanstack/react-router";
 
 const Footer = () => {
   const [isSubscribed, setIsSubscribed] = useState(false);
@@ -28,24 +29,40 @@ const Footer = () => {
         <div className="md:ml-13">
           <h3 className="font-bold">Marketplace</h3>
           <ul className="text-sm space-y-1 mt-2">
-            <li><a href="/marketplace">Overview </a></li>
-            <li><a href="/view">Shop Preloved Fashion</a></li>
-            <li><a href="/upload">Upload Preloved Fashion</a></li>
+            <Link to="/marketplace">
+              <li>Overview</li>
+            </Link>
+            <Link to="/view">
+              <li>Shop Preloved Fashion</li>
+            </Link>
+            <Link to="/upload">
+              <li>Upload Preloved Fashion</li>
+            </Link>
           </ul>
         </div>
         <div className="md:ml-10">
           <h3 className="font-bold">Learn & Act</h3>
           <ul className="text-sm space-y-1 mt-2">
-            <li><a href="/learn">Learn</a></li>
-            <li><a href="/donation">Donation</a></li>
+            <Link to="/learn">
+              <li>Learn</li>
+            </Link>
+            <Link to="/donation">
+              <li>Donation</li>
+            </Link>
           </ul>
         </div>
         <div>
           <h3 className="font-bold">Community</h3>
           <ul className="text-sm space-y-1 mt-2">
-            <li><a href="/community#startLearning">About Us</a></li>
-            <li><a href="/forum">Forum Discussions</a></li>
-            <li><a href="/term">Terms & Conditions</a></li>
+            <Link to="/community">
+              <li>About Us</li>
+            </Link>
+            <Link to="/forum">
+              <li>Forum Discussions</li>
+            </Link>
+            <Link to="/term">
+              <li>Terms & Conditions</li>
+            </Link>
           </ul>
         </div>
         <div className="mr-10 md:mr-0 mt-5 md:mt-0 ">
