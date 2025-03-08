@@ -256,8 +256,8 @@ function ForumComponent() {
                       <p>{diskusi.kategori}</p>
                     </div>
                     <p className="font-normal">{diskusi.message}</p>
-                    <a
-                      href="/forum_detail"
+                    <Link
+                      to="/forum_detail"
                       className="flex self-end items-center pt-1 hover:text-[#4AD74F] text-[#ffb584]"
                     >
                       <span className="self-start ml-1 text-sm font-medium  md:ml-2">
@@ -275,7 +275,7 @@ function ForumComponent() {
                           clip-rule="evenodd"
                         ></path>
                       </svg>
-                    </a>
+                    </Link>
                   </div>
                 ))}
             </div>
